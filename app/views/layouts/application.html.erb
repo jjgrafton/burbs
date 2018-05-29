@@ -10,6 +10,15 @@
   </head>
 
   <body>
+  <div class="header">
+    <img src="/assets/tree.png" alt="Tree Image">
+  </div>
+
     <%= yield %>
+
+    <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6LM1YiZNO8S1FixZXf9hKfAP2KS-V2w4&callback=initMap"
+  type="text/javascript"></script>
   </body>
 </html>
