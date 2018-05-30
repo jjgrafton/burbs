@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
@@ -62,3 +62,15 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
+
+gem 'httparty', '~> 0.16.2'
+
+gem 'bootstrap', '~> 4.1', '>= 4.1.1'
+
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+
+gem 'google_maps_service', '~> 0.4.2'
+
+gem 'popper_js', '~> 1.12', '>= 1.12.9'
+
+gem 'simple_form', '~> 4.0', '>= 4.0.1'

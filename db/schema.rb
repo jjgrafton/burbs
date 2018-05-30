@@ -10,10 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_29_175430) do
+ActiveRecord::Schema.define(version: 2018_05_30_212156) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "locations", force: :cascade do |t|
+  end
+
+  create_table "schools", force: :cascade do |t|
+    t.string "name"
+    t.string "type"
+    t.integer "zipcode"
+    t.string "grade_range"
+    t.integer "enrollement"
+    t.integer "gs_rating"
+    t.integer "parent_rating"
+    t.string "town"
+    t.string "website"
+    t.string "overview_link"
+    t.string "ratings_link"
+    t.string "reviews_link"
+    t.integer "scale"
+    t.string "student_teacher_ratio"
+    t.integer "location_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

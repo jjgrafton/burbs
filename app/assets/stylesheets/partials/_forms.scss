@@ -1,0 +1,22 @@
+.simple_form input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $header-color;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $header-color;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    text-align: center;
+}
+
+input.body {
+    width: 95%;
+}

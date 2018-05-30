@@ -1,0 +1,19 @@
+@mixin login-signup {
+    border-radius: 25px;
+    width: 400px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    margin: 0px auto 0px auto;
+    padding: 10px 20px 10px 20px;
+    font-family: $body-font-stack;
+    background-color: $header-font-color;
+}
+
+.login-box {
+    @include login-signup;
+    height: 300px;
+}
+
+.signup-box {
+    @include login-signup;
+    height: 350px;
+}
