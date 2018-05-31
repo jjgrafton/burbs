@@ -1,8 +1,17 @@
 class LocationsController < ApplicationController
-    before_action :authenticate_user!
 
     def show
-        @towns = HTTParty.get("https://api.greatschools.org/schools/nearby?key=d0bc7eeb56cba7074d643b67a977c968&zip=#{params[:zip]}&radius=5&limit=10")
+        @xml = HTTParty.get("https://api.greatschools.org/schools/nearby?key=d0bc7eeb56cba7074d643b67a977c968&state=ny&zip=10024&radius=5&limit=5")
+
+        
+        # hash = Hash.from_xml()
+
+
+
+        
+        # @schools.each do |school|
+
+        # end
     end
     
 end
