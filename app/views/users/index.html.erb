@@ -1,0 +1,10 @@
+<div class="">
+<%= form_tag("/locations/show", method: "post") do %>
+
+<%= label_tag :term, "Morning Museum ", class: 'form-text' %>
+<%= select_tag "Museum Type", "<option>Art</option><option>History</option><option>Science</option>".html_safe, prompt: 'Select one' %>
+
+<div id="submit"><%= submit_tag "Go", class: 'schedule-button' %></div>
+
+<%end%>
+</div>
