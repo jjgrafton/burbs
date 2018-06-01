@@ -7,12 +7,8 @@ class LocationsController < ApplicationController
 
         @helper = hash["schools"]["school"]
 
-
-
-        
-        # @schools.each do |school|
-
-        # end
     end
     
 end
+
+#{params[:zip]}
