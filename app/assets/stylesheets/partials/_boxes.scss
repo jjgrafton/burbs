@@ -1,3 +1,5 @@
+@import 'fonts';
+@import 'colors';
 @mixin login-signup {
     border-radius: 25px;
     width: 400px;
@@ -15,4 +17,23 @@
 .signup-box {
     @include login-signup;
     height: 350px;
+}
+
+.choose-location-box {
+    border-radius: 25px;
+    width: 400px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    margin: 0px auto 0px auto;
+    padding: 20px 20px 20px 20px;
+    font-family: $body-font-stack;
+    background-color: $mid-green;
+    height: 180px;
+    text-align: center;
+}
+
+.location-box {
+    font-family: $body-font-stack;
+    color: $light-grey;
+    font-weight: bold;
+    font-size: 30px;
 }

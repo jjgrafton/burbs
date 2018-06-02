@@ -74,3 +74,5 @@ gem 'google_maps_service', '~> 0.4.2'
 gem 'popper_js', '~> 1.12', '>= 1.12.9'
 
 gem 'simple_form', '~> 4.0', '>= 4.0.1'
+
+gem 'chartkick', '~> 2.3', '>= 2.3.4'

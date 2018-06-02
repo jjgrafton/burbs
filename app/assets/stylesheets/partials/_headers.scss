@@ -1,4 +1,85 @@
-#login-header {
+@import 'fonts';
+@import 'colors';
+.login-header {
     // @include subheader;
     // color: $header-color;
+}
+
+.head {
+    font-family: 'Comfortaa', cursive;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+
+.logo1 {
+    font-family: $header-font-stack;
+    font-size: 100px;
+    color: $light-grey;
+    margin: 50px 0 20px 70px;
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+}
+
+.logo2 {
+    opacity: 0;
+    font-family: $header-font-stack;
+    font-size: 100px;
+    color: $mid-grey;
+    margin: 50px 0 20px 90px;
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+}
+
+.logo3 {
+    font-family: $header-font-stack;
+    font-size: 100px;
+    color: $mid-green;
+    margin: 50px 0 20px 100px;
+    -webkit-animation: fadein 6s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 6s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 6s;
+    /* Internet Explorer */
+    -o-animation: fadein 6s;
+    /* Opera < 12.1 */
+    animation: fadein 6s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+
+@-webkit-keyframes fadeinout {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinout {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
 }

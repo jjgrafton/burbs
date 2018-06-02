@@ -1,0 +1,14 @@
+@import 'fonts';
+@import 'colors';
+.location-button {
+    background-color: $light-grey;
+    box-shadow: 2px 2px 6px rgba(108, 108, 108, 1.00);
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+    margin: 20px auto 20px auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: $mid-grey;
+}

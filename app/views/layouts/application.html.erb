@@ -7,19 +7,32 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  
   <div class="header">
     <img src="/assets/oak-tree.png" class="tree" alt="Tree Image">
+    <div class="logo1" class="fadeIn">burbs</div>
+    <div class="logo2" class="fadeIn">burbs</div>
+    <div class="logo3" class="fadeIn">burbs</div>
+
   </div>
+  <div class="body">
+  <div class="head">burbs</div>
+ 
 
     <%= yield %>
+    <div class="footer">
+    hello
+    </div>
 
     <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6LM1YiZNO8S1FixZXf9hKfAP2KS-V2w4&callback=initMap"
   type="text/javascript"></script>
+ </div>
   </body>
 </html>

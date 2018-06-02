@@ -1,11 +1,15 @@
-<div class="">
+<div class="choose-location-box">
 <%= form_tag("/locations/show", method: "post") do %>
 
-<%= label_tag :zip, "Location", class: '' %>
-<%= select_tag "Location", "<option value="10705">Ludlow</option><option value="10701">Yonkers</option><option value="10701">Glenwood</option><option value="10701">Greystone</option><option value="10706">Hastings-on-Hudson</option><option value="10522">Dobbs Ferry</option><option value="10503">Ardsley-on-Hudson</option><option value="10533">Irvington</option><option value="10591">Tarrytown</option><option value="10591">Philipse Manor</option><option value="10510">Scarborough</option><option value="10562">Ossining</option><option value="10520">Croton-Harmon</option><option value="10548">Cortlandt</option><option value="10566">Peekskill</option><option value="10524">Manitou</option><option value="10524">Garrison</option><option value="10516">Cold Spring</option><option value="12508">Breakneck Ridge</option><option value="12508">Beacon</option><option value="12590">New Hamburg</option><option value="12601">Poughkeepsie</option>".html_safe, prompt: 'Select one' %>
+<%= label_tag :zip, "Choose your burb", class: 'location-box' %>
+<%= select_tag(:zip, options_for_select([['Ludlow', 10705], ['Yonkers', 10701], ['Glenwood', 10701], ['Greystone', 10701], ['Hastings-on-Hudson', 10706], ['Dobbs Ferry', 10522], ['Ardsley-on-Hudson', 10503], ['Irvington', 10533], ['Tarrytown', 10591], ['Philipse Manor', 10591], ['Scarborough', 10510], ['Ossining', 10562], ['Croton-Harmon', 10520], ['Cortlandt', 10548], ['Peekskill', 10566], ['Manitou', 10524], ['Garrison', 10524], ['Cold Spring', 10516], ['Breakneck Ridge', 12508], ['Beacon', 12508], ['New Hamburg', 12590], ['Poughkeepsie', 12601]]), prompt: 'Select one') %>
 
-<div id="submit"><%= submit_tag "Go", class: '' %></div>
 
-<%end%>
+
+
+
+<div><%= submit_tag "Go", class: 'location-button' %></div>
+
+<% end %>
 </div>
 
