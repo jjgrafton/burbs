@@ -1,5 +1,79 @@
-<h2><%= @helper[0]["name"] %></h2>
-<p> <%= @helper[0]["type"] %></p>
-<p><%= @helper[0]["gradeRange"] %></p>
-<p><%= @helper[0]["enrollment"] %></p>
+<div class="school-banner">Schools</div>
+
+<div class="school-display">
+    <div class="school-box">
+        <div class="school-header"><%= @helper[0]["name"] %></div>
+        <p class="school-text">TYPE:&nbsp<%= @helper[0]["type"] %></p>
+        <p class="school-text">GRADES:&nbsp<%= @helper[0]["gradeRange"] %></p>
+        <p class="school-text">STUDENTS:&nbsp<%= @helper[0]["enrollment"] %></p>
+        <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[0]["gsRating"] %></p>
+        <p class="school-text">PARENT RATING:&nbsp<%= @helper[0]["parentRating"] %></p>
+        <div class="school-header">Links</div>
+        <p class="school-link"><a href="<%= @helper[0]["website"] %>">SCHOOL WEBSITE</a></p>
+        <p class="school-link"><a href="<%= @helper[0]["overviewLink"] %>">OVERVIEW</a></p>
+        <p class="school-link"><a href="<%= @helper[0]["ratingsLink"] %>">RATINGS</a></p>
+        <p class="school-link"><a href="<%= @helper[0]["reviewsLink"] %>">REVIEWS</a></p>
+    </div>
+
+    <div class="school-box">
+        <div class="school-header"><%= @helper[1]["name"] %></div>
+        <p class="school-text">TYPE:&nbsp<%= @helper[1]["type"] %></p>
+        <p class="school-text">GRADES:&nbsp<%= @helper[1]["gradeRange"] %></p>
+        <p class="school-text">STUDENTS:&nbsp<%= @helper[1]["enrollment"] %></p>
+        <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[1]["gsRating"] %></p>
+        <p class="school-text">PARENT RATING:&nbsp<%= @helper[1]["parentRating"] %></p>
+        <div class="school-header">Links</div>
+        <p class="school-link"><a href="<%= @helper[1]["website"] %>">SCHOOL WEBSITE</a></p>
+        <p class="school-link"><a href="<%= @helper[1]["overviewLink"] %>">OVERVIEW</a></p>
+        <p class="school-link"><a href="<%= @helper[1]["ratingsLink"] %>">RATINGS</a></p>
+        <p class="school-link"><a href="<%= @helper[1]["reviewsLink"] %>">REVIEWS</a></p>
+    </div>
+
+    <div class="school-box">
+        <div class="school-header"><%= @helper[2]["name"] %></div>
+        <p class="school-text">TYPE:&nbsp<%= @helper[2]["type"] %></p>
+        <p class="school-text">GRADES:&nbsp<%= @helper[2]["gradeRange"] %></p>
+        <p class="school-text">STUDENTS:&nbsp<%= @helper[2]["enrollment"] %></p>
+        <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[2]["gsRating"] %></p>
+        <p class="school-text">PARENT RATING:&nbsp<%= @helper[2]["parentRating"] %></p>
+        <div class="school-header">Links</div>
+        <p class="school-link"><a href="<%= @helper[2]["website"] %>">SCHOOL WEBSITE</a></p>
+        <p class="school-link"><a href="<%= @helper[2]["overviewLink"] %>">OVERVIEW</a></p>
+        <p class="school-link"><a href="<%= @helper[2]["ratingsLink"] %>">RATINGS</a></p>
+        <p class="school-link"><a href="<%= @helper[2]["reviewsLink"] %>">REVIEWS</a></p>
+    </div>
+
+    <div class="school-box">
+        <div class="school-header"><%= @helper[3]["name"] %></div>
+        <p class="school-text">TYPE:&nbsp<%= @helper[3]["type"] %></p>
+        <p class="school-text">GRADES:&nbsp<%= @helper[3]["gradeRange"] %></p>
+        <p class="school-text">STUDENTS:&nbsp<%= @helper[3]["enrollment"] %></p>
+        <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[3]["gsRating"] %></p>
+        <p class="school-text">PARENT RATING:&nbsp<%= @helper[3]["parentRating"] %></p>
+        <div class="school-header">Links</div>
+        <p class="school-link"><a href="<%= @helper[3]["website"] %>">SCHOOL WEBSITE</a></p>
+        <p class="school-link"><a href="<%= @helper[3]["overviewLink"] %>">OVERVIEW</a></p>
+        <p class="school-link"><a href="<%= @helper[3]["ratingsLink"] %>">RATINGS</a></p>
+        <p class="school-link"><a href="<%= @helper[3]["reviewsLink"] %>">REVIEWS</a></p>
+    </div>
+
+    <div class="school-box">
+        <div class="school-header"><%= @helper[4]["name"] %></div>
+        <p class="school-text">TYPE:&nbsp<%= @helper[4]["type"] %></p>
+        <p class="school-text">GRADES:&nbsp<%= @helper[4]["gradeRange"] %></p>
+        <p class="school-text">STUDENTS:&nbsp<%= @helper[4]["enrollment"] %></p>
+        <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[4]["gsRating"] %></p>
+        <p class="school-text">PARENT RATING:&nbsp<%= @helper[4]["parentRating"] %></p>
+        <div class="school-header">Links</div>
+        <p class="school-link"><a href="<%= @helper[4]["website"] %>">SCHOOL WEBSITE</a></p>
+        <p class="school-link"><a href="<%= @helper[4]["overviewLink"] %>">OVERVIEW</a></p>
+        <p class="school-link"><a href="<%= @helper[4]["ratingsLink"] %>">RATINGS</a></p>
+        <p class="school-link"><a href="<%= @helper[4]["reviewsLink"] %>">REVIEWS</a></p>
+    </div>
+
+</div>
+
+<div class="great-schools">Information provided by <a href="https://www.greatschools.org/">GreatSchools</a></div>
+
+<div><%= @train %></div>
 

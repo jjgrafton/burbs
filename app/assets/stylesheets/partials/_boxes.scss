@@ -37,3 +37,75 @@
     font-weight: bold;
     font-size: 30px;
 }
+
+.school-banner {
+    font-family: $header-font-stack;
+    font-size: 40px;
+    background-color: $mid-green;
+    color: $light-grey;
+    border-radius: 25px;
+    padding: 5px 5px 5px 10px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    margin: 0 auto 20px auto;
+    text-align: center;
+    width: 200px;
+}
+
+.school-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.school-box {
+    border-radius: 25px;
+    width: 250px;
+    height: 400px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    font-family: $body-font-stack;
+    background-color: $mid-green;
+}
+
+.school-header {
+    font-family: $header-font-stack;
+    font-size: 15px;
+    color: $light-grey;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+.school-text {
+    font-family: $body-font-stack;
+    color: $light-grey;
+    font-size: 12px;
+    text-align: center;
+}
+
+.school-link {
+    font-family: $body-font-stack;
+    color: $light-grey !important;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.school-link:hover {
+    color: $mid-grey;
+}
+
+.school-link a {
+    color: $light-grey !important;
+    text-decoration: none;
+}
+
+.great-schools {
+    font-family: $header-font-stack;
+    font-size: 15px;
+    color: $mid-grey;
+    margin: 10px 0 0 20px;
+}
+
+.great-schools a {
+    color: $dark-green;
+    text-decoration: none;
+}
