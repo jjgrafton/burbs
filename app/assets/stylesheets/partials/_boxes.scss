@@ -20,7 +20,8 @@
 }
 
 .choose-location-box {
-    border-radius: 25px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
     width: 400px;
     box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
     margin: 0px auto 0px auto;
@@ -43,8 +44,9 @@
     font-size: 40px;
     background-color: $mid-green;
     color: $light-grey;
-    border-radius: 25px;
-    padding: 5px 5px 5px 10px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    padding: 5px 5px 5px 5px;
     box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
     margin: 0 auto 20px auto;
     text-align: center;
