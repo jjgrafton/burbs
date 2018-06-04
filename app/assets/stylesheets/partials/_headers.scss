@@ -15,38 +15,35 @@
     height: 200px;
 }
 
-.logo1 {
-    font-family: $header-font-stack;
-    font-size: 100px;
-    color: $light-grey;
-    margin: 50px 0 20px 70px;
-    -webkit-animation: fadeinout 4s linear forwards;
-    animation: fadeinout 4s linear forwards;
-}
-
-.logo2 {
-    opacity: 0;
-    font-family: $header-font-stack;
-    font-size: 100px;
-    color: $mid-grey;
-    margin: 50px 0 20px 90px;
-    -webkit-animation: fadeinout 4s linear forwards;
-    animation: fadeinout 4s linear forwards;
-}
-
+// .logo1 {
+//     font-family: $header-font-stack;
+//     font-size: 100px;
+//     color: $light-grey;
+//     margin: 50px 0 20px 70px;
+//     -webkit-animation: fadeinout 4s linear forwards;
+//     animation: fadeinout 4s linear forwards;
+// }
+// .logo2 {
+//     opacity: 0;
+//     font-family: $header-font-stack;
+//     font-size: 100px;
+//     color: $mid-grey;
+//     margin: 50px 0 20px 90px;
+//     -webkit-animation: fadeinout 4s linear forwards;
+//     animation: fadeinout 4s linear forwards;
+// }
 .logo3 {
     font-family: $header-font-stack;
     font-size: 100px;
     color: $mid-green;
-    margin: 50px 0 20px 100px;
+    margin: 50px 40px 20px auto;
+    text-align: center;
+    width: 500px;
+    padding: 0 0 40px 0;
     -webkit-animation: fadein 6s;
-    /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 6s;
-    /* Firefox < 16 */
     -ms-animation: fadein 6s;
-    /* Internet Explorer */
     -o-animation: fadein 6s;
-    /* Opera < 12.1 */
     animation: fadein 6s;
 }
 
@@ -88,5 +85,5 @@
     font-family: $header-font-stack;
     color: $mid-green;
     font-size: 50px;
-    margin: 20px 0 0 100px;
+    margin: 20px 0 0 20px;
 }

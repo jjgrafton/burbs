@@ -1,6 +1,24 @@
 <div class="place-title"><%= @place_name%> </div>
 
-<div class="school-banner">Schools</div>
+
+
+<div class="travel-display">
+<div class="travel-banner" >Travel Times</div>
+    <div class="driving-box">
+        <div class="travel-header">Distance to Midtown Manhattan</div>
+        <div class="travel-text"><%= @driving["routes"][0]["legs"][0]["distance"]["text"] %></div>
+        <div class="travel-header">Approx Driving Time to Midtown Manhattan</div>
+        <div class="travel-text"><%= @driving["routes"][0]["legs"][0]["duration"]["text"] %></div>
+        </div>
+    <div class="train-box">
+        <div class="travel-header">Average Train Journey to Midtown Manhattan</div>
+        <div class="travel-text"><%= @train["routes"][0]["legs"][0]["duration"]["text"] %></div>
+    </div>
+</div>
+
+
+
+<div class="school-banner" ></i>Schools</div>
 
 <div class="school-display">
     <div class="school-box">
@@ -77,9 +95,65 @@
 
 <div class="great-schools">Information provided by <a href="https://www.greatschools.org/">GreatSchools</a></div>
 
-<div><%= @driving %></div>
+<div class="daycare-banner">Daycare</div>
 
-<div><%= @coffee %> </div>
 
-<div><%= @daycare %></div>
+<div class="daycare-display">
+    <div class="daycare-box">
+        <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][0]["venue"]["name"]
+         %></div>
+         <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="daycare-box">
+        <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][1]["venue"]["name"] %></div>
+        <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][1]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="daycare-box">
+        <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][2]["venue"]["name"] %></div>
+        <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][2]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="daycare-box">
+        <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][3]["venue"]["name"] %></div>
+        <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][3]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="daycare-box">
+        <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][4]["venue"]["name"] %></div>
+        <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][4]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+</div>
+
+<div class="coffee-banner">Coffee</div>
+
+<div class="coffee-display">
+    <div class="coffee-box">
+        <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][0]["venue"]["name"] %></div>
+        <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="coffee-box">
+        <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][1]["venue"]["name"] %></div>
+        <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][1]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="coffee-box">
+        <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][2]["venue"]["name"] %></div>
+        <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][2]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="coffee-box">
+        <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][3]["venue"]["name"] %></div>
+        <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][3]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="coffee-box">
+        <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][4]["venue"]["name"] %></div>
+        <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][4]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+</div>
+
+
+
+
+<div><%= @driving["routes"][0]["legs"][0]["distance"]["text"] %></div>
+<div><%= @driving["routes"][0]["legs"][0]["duration"]["text"] %></div>
+
+
+
+
 

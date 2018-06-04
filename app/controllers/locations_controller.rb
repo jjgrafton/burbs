@@ -20,6 +20,7 @@ class LocationsController < ApplicationController
                 @place_id = "place_id:ChIJlybmFmnywokRyL6hUK9g9OM"
                 @place_name = "Ludlow"
                 @foursquare = "ludlow,ny"
+                
         elsif @zip === "10701"
                 @place_id = "place_id:ChIJ_UMCtnDywokRH7B_1XIxOrw" 
                 @place_name = "Yonkers, Glenwood & Greystone"
@@ -90,16 +91,20 @@ class LocationsController < ApplicationController
         puts @place_id
         puts @place_name
         puts @foursquare
+        puts @train
         puts ">>>>"
 
 
-        @train = HTTParty.get("https://maps.googleapis.com/maps/api/directions/JSON?origin=#{@place_id}&destination=place_id:ChIJhRwB-yFawokRi0AhGH87UTc&transit_mode=rail&key=AIzaSyD6LM1YiZNO8S1FixZXf9hKfAP2KS-V2w4")
+        @train = HTTParty.get("https://maps.googleapis.com/maps/api/directions/json?origin=#{@place_id}&destination=place_id:ChIJhRwB-yFawokRi0AhGH87UTc&mode=transit&key=AIzaSyD6LM1YiZNO8S1FixZXf9hKfAP2KS-V2w4")
 
         @driving = HTTParty.get("https://maps.googleapis.com/maps/api/directions/json?origin=#{@place_id}&destination=place_id:ChIJhRwB-yFawokRi0AhGH87UTc&key=AIzaSyD6LM1YiZNO8S1FixZXf9hKfAP2KS-V2w4")
 
         @coffee = HTTParty.get("https://api.foursquare.com/v2/venues/explore?near=#{@foursquare}&query=coffee&limit=5&v=20150214&m=foursquare&client_secret=NQVC1IA4AD1AMCITCJU3LCDWSZIC04WRUDCWV3LSAZ10Y3QD&client_id=AZDSZKJAU3FCSY3Z5BFIGEZUCIMLKFYOZSQ5UECV5UVHVBJO")
 
         @daycare = HTTParty.get("https://api.foursquare.com/v2/venues/explore?near=#{@foursquare}&query=daycare&limit=5&v=20150214&m=foursquare&client_secret=NQVC1IA4AD1AMCITCJU3LCDWSZIC04WRUDCWV3LSAZ10Y3QD&client_id=AZDSZKJAU3FCSY3Z5BFIGEZUCIMLKFYOZSQ5UECV5UVHVBJO")
+
+        @playgrounds = HTTParty.get("https://api.foursquare.com/v2/venues/explore?near=#{@foursquare}&query=playgrounds&limit=5&v=20150214&m=foursquare&client_secret=NQVC1IA4AD1AMCITCJU3LCDWSZIC04WRUDCWV3LSAZ10Y3QD&client_id=AZDSZKJAU3FCSY3Z5BFIGEZUCIMLKFYOZSQ5UECV5UVHVBJO")
+
 
         
 

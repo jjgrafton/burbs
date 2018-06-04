@@ -39,6 +39,62 @@
     font-size: 30px;
 }
 
+.travel-banner {
+    font-family: $header-font-stack;
+    font-size: 40px;
+    background-color: $light-blue;
+    color: $light-grey;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    margin: 0px auto 20px auto;
+    text-align: center;
+    width: 200px;
+}
+
+.travel-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.driving-box {
+    border-radius: 25px;
+    width: 500px;
+    height: 180px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    font-family: $body-font-stack;
+    background-color: $light-blue;
+    margin-right: 20px;
+}
+
+.train-box {
+    border-radius: 25px;
+    width: 250px;
+    height: 180px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    font-family: $body-font-stack;
+    background-color: $light-blue;
+}
+
+.travel-header {
+    font-family: $header-font-stack;
+    font-size: 15px;
+    color: $light-grey;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+.travel-text {
+    font-family: $header-font-stack;
+    font-size: 15px;
+    color: $light-grey;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    vertical-align: center;
+}
+
 .school-banner {
     font-family: $header-font-stack;
     font-size: 40px;
@@ -110,4 +166,80 @@
 .great-schools a {
     color: $dark-green;
     text-decoration: none;
+}
+
+.daycare-banner {
+    font-family: $header-font-stack;
+    font-size: 40px;
+    background-color: $light-blue;
+    color: $light-grey;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    margin: 40px auto 20px auto;
+    text-align: center;
+    width: 200px;
+}
+
+.daycare-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.daycare-box {
+    border-radius: 25px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    font-family: $body-font-stack;
+    background-color: $light-blue;
+}
+
+.daycare-text {
+    font-family: $header-font-stack;
+    font-size: 15px;
+    color: $light-grey;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    vertical-align: center;
+}
+
+.coffee-banner {
+    font-family: $header-font-stack;
+    font-size: 40px;
+    background-color: $mid-green;
+    color: $light-grey;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    margin: 40px auto 20px auto;
+    text-align: center;
+    width: 200px;
+}
+
+.coffee-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.coffee-box {
+    border-radius: 25px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    font-family: $body-font-stack;
+    background-color: $mid-green;
+}
+
+.coffee-text {
+    font-family: $header-font-stack;
+    font-size: 15px;
+    color: $light-grey;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    vertical-align: center;
 }
