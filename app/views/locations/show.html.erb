@@ -121,6 +121,7 @@
         <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][4]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
 </div>
+<div class="foursquare">Information provided by <a href="https://www.foursquare.com/"><img src="/assets/foursquare.png" alt="Foursquare" class="foursquare-logo"></a></div>
 
 <div class="coffee-banner">Coffee</div>
 
@@ -146,12 +147,39 @@
         <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][4]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
 </div>
+<div class="foursquare">Information provided by <a href="https://www.foursquare.com/"><img src="/assets/foursquare.png" alt="Foursquare" class="foursquare-logo"></a></div>
+
+<div class="playgrounds-banner">Playgrounds</div>
+
+<div class="playgrounds-display">
+    <div class="playgrounds-box">
+        <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["name"] %></div>
+        <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="playgrounds-box">
+        <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["name"] %></div>
+        <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="playgrounds-box">
+        <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["name"] %></div>
+        <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="playgrounds-box">
+        <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["name"] %></div>
+        <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="playgrounds-box">
+        <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["name"] %></div>
+        <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+</div>
+<div class="foursquare">Information provided by <a href="https://www.foursquare.com/"><img src="/assets/foursquare.png" alt="Foursquare" class="foursquare-logo"></a></div>
 
 
 
 
-<div><%= @driving["routes"][0]["legs"][0]["distance"]["text"] %></div>
-<div><%= @driving["routes"][0]["legs"][0]["duration"]["text"] %></div>
+
+
 
 
 

@@ -106,6 +106,7 @@ class LocationsController < ApplicationController
         @playgrounds = HTTParty.get("https://api.foursquare.com/v2/venues/explore?near=#{@foursquare}&query=playgrounds&limit=5&v=20150214&m=foursquare&client_secret=NQVC1IA4AD1AMCITCJU3LCDWSZIC04WRUDCWV3LSAZ10Y3QD&client_id=AZDSZKJAU3FCSY3Z5BFIGEZUCIMLKFYOZSQ5UECV5UVHVBJO")
 
 
+
         
 
         

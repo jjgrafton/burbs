@@ -44,13 +44,12 @@
     font-size: 40px;
     background-color: $light-blue;
     color: $light-grey;
-    border-bottom-left-radius: 50% 20%;
-    border-bottom-right-radius: 50% 20%;
-    padding: 5px 5px 5px 5px;
+    padding: 20px 5px 20px 5px;
     box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    margin: 0px auto 20px auto;
+    margin: 0px 40px 20px 20px;
     text-align: center;
     width: 200px;
+    transform: skew(-200deg);
 }
 
 .travel-display {
@@ -73,6 +72,7 @@
     border-radius: 25px;
     width: 250px;
     height: 180px;
+    padding: 20px 0 20px 0;
     box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
     font-family: $body-font-stack;
     background-color: $light-blue;
@@ -100,13 +100,12 @@
     font-size: 40px;
     background-color: $mid-green;
     color: $light-grey;
-    border-bottom-left-radius: 50% 20%;
-    border-bottom-right-radius: 50% 20%;
     padding: 5px 5px 5px 5px;
     box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    margin: 0 auto 20px auto;
+    margin: 40px auto 20px auto;
     text-align: center;
     width: 200px;
+    transform: skew(-200deg);
 }
 
 .school-display {
@@ -173,13 +172,12 @@
     font-size: 40px;
     background-color: $light-blue;
     color: $light-grey;
-    border-bottom-left-radius: 50% 20%;
-    border-bottom-right-radius: 50% 20%;
     padding: 5px 5px 5px 5px;
     box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
     margin: 40px auto 20px auto;
     text-align: center;
     width: 200px;
+    transform: skew(-200deg);
 }
 
 .daycare-display {
@@ -206,18 +204,24 @@
     vertical-align: center;
 }
 
+.foursquare {
+    font-family: $header-font-stack;
+    font-size: 15px;
+    color: $mid-grey;
+    margin: 10px 0 0 20px;
+}
+
 .coffee-banner {
     font-family: $header-font-stack;
     font-size: 40px;
     background-color: $mid-green;
     color: $light-grey;
-    border-bottom-left-radius: 50% 20%;
-    border-bottom-right-radius: 50% 20%;
     padding: 5px 5px 5px 5px;
     box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
     margin: 40px auto 20px auto;
     text-align: center;
     width: 200px;
+    transform: skew(-200deg);
 }
 
 .coffee-display {
@@ -236,6 +240,43 @@
 }
 
 .coffee-text {
+    font-family: $header-font-stack;
+    font-size: 15px;
+    color: $light-grey;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    vertical-align: center;
+}
+
+.playgrounds-banner {
+    font-family: $header-font-stack;
+    font-size: 40px;
+    background-color: $light-blue;
+    color: $light-grey;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    margin: 40px auto 20px auto;
+    text-align: center;
+    width: 300px;
+    transform: skew(-200deg);
+}
+
+.playgrounds-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.playgrounds-box {
+    border-radius: 25px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    font-family: $body-font-stack;
+    background-color: $light-blue;
+}
+
+.playgrounds-text {
     font-family: $header-font-stack;
     font-size: 15px;
     color: $light-grey;
