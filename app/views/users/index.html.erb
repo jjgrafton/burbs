@@ -1,3 +1,9 @@
+<div class="location-page">
+
+<div class="profile-box">
+    <div>Welcome <%= @current_user.email %></div>
+</div>
+
 <div class="choose-location-box">
 <%= form_tag("/locations/show", method: "post") do %>
 
@@ -11,5 +17,6 @@
 <div><%= submit_tag "Go", class: 'location-button' %></div>
 
 <% end %>
+</div>
 </div>
 

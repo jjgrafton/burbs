@@ -1,7 +1,11 @@
 class LocationsController < ApplicationController
+        before_action :authenticate_user!
+
     require 'json'
 
     def show
+        
+        @current_user = current_user
         #pull data from Great Schools API using a zipcode
         xml = HTTParty.get("https://api.greatschools.org/schools/nearby?key=d0bc7eeb56cba7074d643b67a977c968&state=ny&zip=#{params[:zip]}&radius=5&limit=5")
 
@@ -113,5 +117,7 @@ class LocationsController < ApplicationController
     end
     
 end
+
+
 
 #{params[:zip]}
