@@ -1,4 +1,10 @@
-<div class="place-title"><%= @place_name%> </div>
+<div class="location-header">
+everything you need to know about…<div class="place-title"><%= @place_name%> </div>
+</div>
+
+<hr>
+
+<div><%= @map %></div>
 
 
 
@@ -6,169 +12,197 @@
 <div class="travel-banner" >Travel Times</div>
     <div class="driving-box">
         <div class="travel-header">Distance to Midtown Manhattan</div>
-        <div class="travel-text"><%= @driving["routes"][0]["legs"][0]["distance"]["text"] %></div>
+        <div class="driving-stats"><%= @driving["routes"][0]["legs"][0]["distance"]["text"] %></div>
         <div class="travel-header">Approx Driving Time to Midtown Manhattan</div>
-        <div class="travel-text"><%= @driving["routes"][0]["legs"][0]["duration"]["text"] %></div>
+        <div class="driving-stats"><%= @driving["routes"][0]["legs"][0]["duration"]["text"] %></div>
         </div>
     <div class="train-box">
         <div class="travel-header">Average Train Journey to Midtown Manhattan</div>
-        <div class="travel-text"><%= @train["routes"][0]["legs"][0]["duration"]["text"] %></div>
+        <div class="train-stats"><%= @train["routes"][0]["legs"][0]["duration"]["text"] %></div>
     </div>
 </div>
 
+<hr>
 
 
-<div class="school-banner" ></i>Schools</div>
+
+<div class="school-banner">Schools</div>
 
 <div class="school-display">
     <div class="school-box">
-        <div class="school-header"><%= @helper[0]["name"] %></div>
-        <p class="school-text">TYPE:&nbsp<%= @helper[0]["type"] %></p>
-        <p class="school-text">GRADES:&nbsp<%= @helper[0]["gradeRange"] %></p>
-        <p class="school-text">STUDENTS:&nbsp<%= @helper[0]["enrollment"] %></p>
-        <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[0]["gsRating"] %></p>
-        <p class="school-text">PARENT RATING:&nbsp<%= @helper[0]["parentRating"] %></p>
+        <div class="school-info-box-dark">
+            <div class="school-header"><%= @helper[0]["name"] %></div>
+            <p class="school-text">TYPE:&nbsp<%= @helper[0]["type"] %></p>
+            <p class="school-text">GRADES:&nbsp<%= @helper[0]["gradeRange"] %></p>
+            <p class="school-text">STUDENTS:&nbsp<%= @helper[0]["enrollment"] %></p>
+            <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[0]["gsRating"] %></p>
+            <p class="school-text">PARENT RATING:&nbsp<%= @helper[0]["parentRating"] %></p>
+        </div>
+        <div class="school-links-box-dark">
         <div class="school-header">Links</div>
-        <p class="school-link"><a href="<%= @helper[0]["website"] %>">SCHOOL WEBSITE</a></p>
-        <p class="school-link"><a href="<%= @helper[0]["overviewLink"] %>">OVERVIEW</a></p>
-        <p class="school-link"><a href="<%= @helper[0]["ratingsLink"] %>">RATINGS</a></p>
-        <p class="school-link"><a href="<%= @helper[0]["reviewsLink"] %>">REVIEWS</a></p>
+            <p class="school-link"><a href="<%= @helper[0]["website"] %>">SCHOOL WEBSITE</a></p>
+            <p class="school-link"><a href="<%= @helper[0]["overviewLink"] %>">OVERVIEW</a></p>
+            <p class="school-link"><a href="<%= @helper[0]["ratingsLink"] %>">RATINGS</a></p>
+            <p class="school-link"><a href="<%= @helper[0]["reviewsLink"] %>">REVIEWS</a></p>
+        </div>
     </div>
 
     <div class="school-box">
-        <div class="school-header"><%= @helper[1]["name"] %></div>
-        <p class="school-text">TYPE:&nbsp<%= @helper[1]["type"] %></p>
-        <p class="school-text">GRADES:&nbsp<%= @helper[1]["gradeRange"] %></p>
-        <p class="school-text">STUDENTS:&nbsp<%= @helper[1]["enrollment"] %></p>
-        <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[1]["gsRating"] %></p>
-        <p class="school-text">PARENT RATING:&nbsp<%= @helper[1]["parentRating"] %></p>
+        <div class="school-info-box-light">
+            <div class="school-header"><%= @helper[1]["name"] %></div>
+            <p class="school-text">TYPE:&nbsp<%= @helper[1]["type"] %></p>
+            <p class="school-text">GRADES:&nbsp<%= @helper[1]["gradeRange"] %></p>
+            <p class="school-text">STUDENTS:&nbsp<%= @helper[1]["enrollment"] %></p>
+            <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[1]["gsRating"] %></p>
+            <p class="school-text">PARENT RATING:&nbsp<%= @helper[1]["parentRating"] %></p>
+        </div>
+        <div class="school-links-box-light">
         <div class="school-header">Links</div>
-        <p class="school-link"><a href="<%= @helper[1]["website"] %>">SCHOOL WEBSITE</a></p>
-        <p class="school-link"><a href="<%= @helper[1]["overviewLink"] %>">OVERVIEW</a></p>
-        <p class="school-link"><a href="<%= @helper[1]["ratingsLink"] %>">RATINGS</a></p>
-        <p class="school-link"><a href="<%= @helper[1]["reviewsLink"] %>">REVIEWS</a></p>
+            <p class="school-link"><a href="<%= @helper[1]["website"] %>">SCHOOL WEBSITE</a></p>
+            <p class="school-link"><a href="<%= @helper[1]["overviewLink"] %>">OVERVIEW</a></p>
+            <p class="school-link"><a href="<%= @helper[1]["ratingsLink"] %>">RATINGS</a></p>
+            <p class="school-link"><a href="<%= @helper[1]["reviewsLink"] %>">REVIEWS</a></p>
+        </div>
     </div>
 
     <div class="school-box">
-        <div class="school-header"><%= @helper[2]["name"] %></div>
-        <p class="school-text">TYPE:&nbsp<%= @helper[2]["type"] %></p>
-        <p class="school-text">GRADES:&nbsp<%= @helper[2]["gradeRange"] %></p>
-        <p class="school-text">STUDENTS:&nbsp<%= @helper[2]["enrollment"] %></p>
-        <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[2]["gsRating"] %></p>
-        <p class="school-text">PARENT RATING:&nbsp<%= @helper[2]["parentRating"] %></p>
+        <div class="school-info-box-dark">
+            <div class="school-header"><%= @helper[2]["name"] %></div>
+            <p class="school-text">TYPE:&nbsp<%= @helper[2]["type"] %></p>
+            <p class="school-text">GRADES:&nbsp<%= @helper[2]["gradeRange"] %></p>
+            <p class="school-text">STUDENTS:&nbsp<%= @helper[2]["enrollment"] %></p>
+            <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[2]["gsRating"] %></p>
+            <p class="school-text">PARENT RATING:&nbsp<%= @helper[2]["parentRating"] %></p>
+        </div>
+        <div class="school-links-box-dark">
         <div class="school-header">Links</div>
-        <p class="school-link"><a href="<%= @helper[2]["website"] %>">SCHOOL WEBSITE</a></p>
-        <p class="school-link"><a href="<%= @helper[2]["overviewLink"] %>">OVERVIEW</a></p>
-        <p class="school-link"><a href="<%= @helper[2]["ratingsLink"] %>">RATINGS</a></p>
-        <p class="school-link"><a href="<%= @helper[2]["reviewsLink"] %>">REVIEWS</a></p>
+            <p class="school-link"><a href="<%= @helper[2]["website"] %>">SCHOOL WEBSITE</a></p>
+            <p class="school-link"><a href="<%= @helper[2]["overviewLink"] %>">OVERVIEW</a></p>
+            <p class="school-link"><a href="<%= @helper[2]["ratingsLink"] %>">RATINGS</a></p>
+            <p class="school-link"><a href="<%= @helper[2]["reviewsLink"] %>">REVIEWS</a></p>
+        </div>
     </div>
 
     <div class="school-box">
-        <div class="school-header"><%= @helper[3]["name"] %></div>
-        <p class="school-text">TYPE:&nbsp<%= @helper[3]["type"] %></p>
-        <p class="school-text">GRADES:&nbsp<%= @helper[3]["gradeRange"] %></p>
-        <p class="school-text">STUDENTS:&nbsp<%= @helper[3]["enrollment"] %></p>
-        <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[3]["gsRating"] %></p>
-        <p class="school-text">PARENT RATING:&nbsp<%= @helper[3]["parentRating"] %></p>
+        <div class="school-info-box-light">
+            <div class="school-header"><%= @helper[3]["name"] %></div>
+            <p class="school-text">TYPE:&nbsp<%= @helper[3]["type"] %></p>
+            <p class="school-text">GRADES:&nbsp<%= @helper[3]["gradeRange"] %></p>
+            <p class="school-text">STUDENTS:&nbsp<%= @helper[3]["enrollment"] %></p>
+            <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[3]["gsRating"] %></p>
+            <p class="school-text">PARENT RATING:&nbsp<%= @helper[3]["parentRating"] %></p>
+        </div>
+        <div class="school-links-box-light">
         <div class="school-header">Links</div>
-        <p class="school-link"><a href="<%= @helper[3]["website"] %>">SCHOOL WEBSITE</a></p>
-        <p class="school-link"><a href="<%= @helper[3]["overviewLink"] %>">OVERVIEW</a></p>
-        <p class="school-link"><a href="<%= @helper[3]["ratingsLink"] %>">RATINGS</a></p>
-        <p class="school-link"><a href="<%= @helper[3]["reviewsLink"] %>">REVIEWS</a></p>
+            <p class="school-link"><a href="<%= @helper[3]["website"] %>">SCHOOL WEBSITE</a></p>
+            <p class="school-link"><a href="<%= @helper[3]["overviewLink"] %>">OVERVIEW</a></p>
+            <p class="school-link"><a href="<%= @helper[3]["ratingsLink"] %>">RATINGS</a></p>
+            <p class="school-link"><a href="<%= @helper[3]["reviewsLink"] %>">REVIEWS</a></p>
+        </div>
     </div>
 
     <div class="school-box">
-        <div class="school-header"><%= @helper[4]["name"] %></div>
-        <p class="school-text">TYPE:&nbsp<%= @helper[4]["type"] %></p>
-        <p class="school-text">GRADES:&nbsp<%= @helper[4]["gradeRange"] %></p>
-        <p class="school-text">STUDENTS:&nbsp<%= @helper[4]["enrollment"] %></p>
-        <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[4]["gsRating"] %></p>
-        <p class="school-text">PARENT RATING:&nbsp<%= @helper[4]["parentRating"] %></p>
+        <div class="school-info-box-dark">
+            <div class="school-header"><%= @helper[4]["name"] %></div>
+            <p class="school-text">TYPE:&nbsp<%= @helper[4]["type"] %></p>
+            <p class="school-text">GRADES:&nbsp<%= @helper[4]["gradeRange"] %></p>
+            <p class="school-text">STUDENTS:&nbsp<%= @helper[4]["enrollment"] %></p>
+            <p class="school-text">GREAT SCHOOLS RATING:&nbsp<%= @helper[4]["gsRating"] %></p>
+            <p class="school-text">PARENT RATING:&nbsp<%= @helper[4]["parentRating"] %></p>
+        </div>
+        <div class="school-links-box-dark">
         <div class="school-header">Links</div>
-        <p class="school-link"><a href="<%= @helper[4]["website"] %>">SCHOOL WEBSITE</a></p>
-        <p class="school-link"><a href="<%= @helper[4]["overviewLink"] %>">OVERVIEW</a></p>
-        <p class="school-link"><a href="<%= @helper[4]["ratingsLink"] %>">RATINGS</a></p>
-        <p class="school-link"><a href="<%= @helper[4]["reviewsLink"] %>">REVIEWS</a></p>
+            <p class="school-link"><a href="<%= @helper[4]["website"] %>">SCHOOL WEBSITE</a></p>
+            <p class="school-link"><a href="<%= @helper[4]["overviewLink"] %>">OVERVIEW</a></p>
+            <p class="school-link"><a href="<%= @helper[4]["ratingsLink"] %>">RATINGS</a></p>
+            <p class="school-link"><a href="<%= @helper[4]["reviewsLink"] %>">REVIEWS</a></p>
+        </div>
     </div>
 
 </div>
 
 <div class="great-schools">Information provided by <a href="https://www.greatschools.org/">GreatSchools</a></div>
 
+<hr>
+
 <div class="daycare-banner">Daycare</div>
 
 
 <div class="daycare-display">
-    <div class="daycare-box">
+    <div class="daycare-box-dark">
         <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][0]["venue"]["name"]
          %></div>
          <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
-    <div class="daycare-box">
+    <div class="daycare-box-light">
         <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][1]["venue"]["name"] %></div>
         <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][1]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
-    <div class="daycare-box">
+    <div class="daycare-box-dark">
         <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][2]["venue"]["name"] %></div>
         <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][2]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
-    <div class="daycare-box">
+    <div class="daycare-box-light">
         <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][3]["venue"]["name"] %></div>
         <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][3]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
-    <div class="daycare-box">
+    <div class="daycare-box-dark">
         <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][4]["venue"]["name"] %></div>
         <div class="daycare-text"><%= @daycare["response"]["groups"][0]["items"][4]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
 </div>
 <div class="foursquare">Information provided by <a href="https://www.foursquare.com/"><img src="/assets/foursquare.png" alt="Foursquare" class="foursquare-logo"></a></div>
 
+<hr>
+
 <div class="coffee-banner">Coffee</div>
 
 <div class="coffee-display">
-    <div class="coffee-box">
+    <div class="coffee-box-dark">
         <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][0]["venue"]["name"] %></div>
         <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
-    <div class="coffee-box">
+    <div class="coffee-box-light">
         <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][1]["venue"]["name"] %></div>
         <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][1]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
-    <div class="coffee-box">
+    <div class="coffee-box-dark">
         <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][2]["venue"]["name"] %></div>
         <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][2]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
-    <div class="coffee-box">
+    <div class="coffee-box-light">
         <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][3]["venue"]["name"] %></div>
         <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][3]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
-    <div class="coffee-box">
+    <div class="coffee-box-dark">
         <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][4]["venue"]["name"] %></div>
         <div class="coffee-text"><%= @coffee["response"]["groups"][0]["items"][4]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
 </div>
 <div class="foursquare">Information provided by <a href="https://www.foursquare.com/"><img src="/assets/foursquare.png" alt="Foursquare" class="foursquare-logo"></a></div>
 
+<hr>
+
 <div class="playgrounds-banner">Playgrounds</div>
 
 <div class="playgrounds-display">
-    <div class="playgrounds-box">
+    <div class="playgrounds-box-dark">
         <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["name"] %></div>
         <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
-    <div class="playgrounds-box">
+    <div class="playgrounds-box-light">
         <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["name"] %></div>
         <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
-    <div class="playgrounds-box">
+    <div class="playgrounds-box-dark">
         <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["name"] %></div>
         <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
-    <div class="playgrounds-box">
+    <div class="playgrounds-box-light">
         <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["name"] %></div>
         <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
-    <div class="playgrounds-box">
+    <div class="playgrounds-box-dark">
         <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["name"] %></div>
         <div class="playgrounds-text"> <%= @playgrounds["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
     </div>
