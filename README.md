@@ -21,6 +21,7 @@ A much wider range of towns and communities will be included, and the range of i
 Devise, HTTParty, Simple Form, Bootstrap
 
 **Getting Started**
+
 Run bundle install
 $rails db:create
 $rails db:migrate
@@ -28,13 +29,16 @@ $rails db:seed
 Log in as test@test.com / pw: test123 (Username: Bruce Wayne)
 
 **Deployment**
+
 Deployment will be through Heroku.
 
 **Built With**
+
 Ruby on Rails - The web framework used
 Gems - Gems to enhance the users experience
 Bootstrap - Used to generate styling and forms
 Devise - Used to generate user-friendly functions (i.e. logging in)
 
 **Versioning**
+
 Ruby version 2.3.1
