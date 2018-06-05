@@ -4,17 +4,14 @@ everything you need to know about…<div class="place-title"><%= @place_name%> <
 
 <hr>
 
-<div><%= @map %></div>
-
-
 
 <div class="travel-display">
-<div class="travel-banner" >Travel Times</div>
-    <div class="driving-box">
-        <div class="travel-header">Distance to Midtown Manhattan</div>
-        <div class="driving-stats"><%= @driving["routes"][0]["legs"][0]["distance"]["text"] %></div>
-        <div class="travel-header">Approx Driving Time to Midtown Manhattan</div>
-        <div class="driving-stats"><%= @driving["routes"][0]["legs"][0]["duration"]["text"] %></div>
+    <div class="travel-banner" >Travel Times</div>
+        <div class="driving-box">
+            <div class="travel-header">Distance to Midtown Manhattan</div>
+            <div class="driving-stats"><%= @driving["routes"][0]["legs"][0]["distance"]["text"] %></div>
+            <div class="travel-header">Approx Driving Time to Midtown Manhattan</div>
+            <div class="driving-stats"><%= @driving["routes"][0]["legs"][0]["duration"]["text"] %></div>
         </div>
     <div class="train-box">
         <div class="travel-header">Average Train Journey to Midtown Manhattan</div>
@@ -22,6 +19,10 @@ everything you need to know about…<div class="place-title"><%= @place_name%> <
     </div>
 </div>
 
+<hr>
+<div class="map-row">
+<iframe class="map-frame" src="<%= @map %>"></iframe>
+</div>
 <hr>
 
 

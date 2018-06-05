@@ -135,6 +135,17 @@
     vertical-align: center;
 }
 
+.map-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.map-frame {
+    width: 600px;
+    height: 400px;
+    margin: 20px 10px 20px 10px;
+}
+
 .school-banner {
     font-family: $header-font-stack;
     font-size: 40px;
