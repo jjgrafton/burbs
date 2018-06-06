@@ -416,3 +416,53 @@
     text-align: center;
     vertical-align: center;
 }
+
+.supermarket-banner {
+    font-family: $header-font-stack;
+    font-size: 40px;
+    background-color: $light-green;
+    color: $light-grey;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+    margin: 40px auto 20px 10px;
+    text-align: center;
+    width: 330px;
+    border-radius: 5px 20px 5px;
+}
+
+.supermarket-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.supermarket-box-dark {
+    border-radius: 25px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+    font-family: $body-font-stack;
+    background-color: $mid-green;
+}
+
+.supermarket-box-light {
+    border-radius: 25px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+    font-family: $body-font-stack;
+    background-color: $light-green;
+}
+
+.supermarket-text {
+    font-family: $header-font-stack;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+    font-size: 15px;
+    color: $light-grey;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    vertical-align: center;
+}

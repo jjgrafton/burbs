@@ -110,7 +110,9 @@ class LocationsController < ApplicationController
 
         @playgrounds = HTTParty.get("https://api.foursquare.com/v2/venues/explore?near=#{@foursquare}&query=playgrounds&limit=5&v=20150214&m=foursquare&client_secret=NQVC1IA4AD1AMCITCJU3LCDWSZIC04WRUDCWV3LSAZ10Y3QD&client_id=AZDSZKJAU3FCSY3Z5BFIGEZUCIMLKFYOZSQ5UECV5UVHVBJO")
 
-        @map = "https://open.mapquestapi.com/staticmap/v5/map?key=jmdLmuonAfrrD0LozbQcPLZNSA5xqmif&center=#{@foursquare}&zoom=15&size=600,400"
+        @supermarket = HTTParty.get("https://api.foursquare.com/v2/venues/explore?near=#{@foursquare}&query=supermarkets&limit=5&v=20150214&m=foursquare&client_secret=NQVC1IA4AD1AMCITCJU3LCDWSZIC04WRUDCWV3LSAZ10Y3QD&client_id=AZDSZKJAU3FCSY3Z5BFIGEZUCIMLKFYOZSQ5UECV5UVHVBJO")
+
+        @map = "https://dev.virtualearth.net/REST/V1/Imagery/Map/Road/#{@zip}/13?mapSize=600,400&format=png&key=AulEaUqqAg-LYiZz4uWArSu2KhSTpFvdeHevugs5Mle7Bw7Es0FWWAe3zpRHx8ds"
 
 
 

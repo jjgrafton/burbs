@@ -210,6 +210,36 @@ everything you need to know about…<div class="place-title"><%= @place_name%> <
 </div>
 <div class="foursquare">Information provided by <a href="https://www.foursquare.com/"><img src="/assets/foursquare.png" alt="Foursquare" class="foursquare-logo"></a></div>
 
+<hr>
+
+<div class="supermarket-banner">Supermarkets</div>
+
+<div class="supermarket-display">
+    <div class="supermarket-box-dark">
+        <div class="supermarket-text"><%= @supermarket["response"]["groups"][0]["items"][0]["venue"]["name"] %></div>
+        <div class="supermarket-text"><%= @supermarket["response"]["groups"][0]["items"][0]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="supermarket-box-light">
+        <div class="supermarket-text"><%= @supermarket["response"]["groups"][0]["items"][1]["venue"]["name"] %></div>
+        <div class="supermarket-text"><%= @supermarket["response"]["groups"][0]["items"][1]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="supermarket-box-dark">
+        <div class="supermarket-text"><%= @supermarket["response"]["groups"][0]["items"][2]["venue"]["name"] %></div>
+        <div class="supermarket-text"><%= @supermarket["response"]["groups"][0]["items"][2]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="supermarket-box-light">
+        <div class="supermarket-text"><%= @supermarket["response"]["groups"][0]["items"][3]["venue"]["name"] %></div>
+        <div class="supermarket-text"><%= @supermarket["response"]["groups"][0]["items"][3]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+    <div class="supermarket-box-dark">
+        <div class="supermarket-text"><%= @supermarket["response"]["groups"][0]["items"][4]["venue"]["name"] %></div>
+        <div class="supermarket-text"><%= @supermarket["response"]["groups"][0]["items"][4]["venue"]["location"]["formattedAddress"][0] %></div>
+    </div>
+</div>
+<div class="foursquare">Information provided by <a href="https://www.foursquare.com/"><img src="/assets/foursquare.png" alt="Foursquare" class="foursquare-logo"></a></div>
+
+<hr>
+
 
 
 
