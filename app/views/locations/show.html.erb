@@ -3,10 +3,23 @@ everything you need to know about…<div class="place-title"><%= @place_name%> <
 </div>
 
 <hr>
-
-
+<div class="demographics-display">
+<div class="demographics-box">
+<div><%= @demographics["themes"]["ageTheme"]["individualValueVariable"][0]["name"] %></div>
+<div><%= @demographics["themes"]["ageTheme"]["individualValueVariable"][0]["value"] %></div>
+</div>
+<div class="demographics-box">
+<div><%= @demographics["themes"]["ageTheme"]["individualValueVariable"][1]["name"] %></div>
+<div><%= @demographics["themes"]["ageTheme"]["individualValueVariable"][1]["value"] %></div>
+</div>
+<div class="demographics-box">
+<div><%= @demographics["themes"]["incomeTheme"]["individualValueVariable"][1]["name"] %></div>
+<div><%= @demographics["themes"]["incomeTheme"]["individualValueVariable"][1]["value"] %></div>
+</div>
+</div>
+<hr>
 <div class="travel-display">
-    <div class="travel-banner" >Travel Times</div>
+    <div class="travel-banner" >TRAVEL TIMES</div>
         <div class="driving-box">
             <div class="travel-header">Distance to Midtown Manhattan</div>
             <div class="driving-stats"><%= @driving["routes"][0]["legs"][0]["distance"]["text"] %></div>
@@ -19,15 +32,80 @@ everything you need to know about…<div class="place-title"><%= @place_name%> <
     </div>
 </div>
 
+
+
+
+
+
+
+
+
+
 <hr>
 <div class="map-row">
 <iframe class="map-frame" src="<%= @map %>"></iframe>
 </div>
 <hr>
+<div class="crime-banner">CRIME</div>
+<div class="crime-display">
+<div class="crime-categories">
+<div class="crime-type">TYPE</div>
+<div>SCORE</div>
+<div>CATEGORY</div>
+<div>PERCENTILE</div>
+</div>
+<div id="overall" class="crime-text">
+<div class="crime-header">OVERALL</div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][0]["score"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][0]["category"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][0]["percentile"] %></div>
+</div>
+<div id="violent" class="crime-text">
+<div class="crime-header">VIOLENT</div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][1]["score"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][1]["category"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][1]["percentile"] %></div>
+</div>
+<div id="murder" class="crime-text">
+<div class="crime-header">MURDER</div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][2]["score"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][2]["category"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][2]["percentile"] %></div>
+</div>
+<div id="rape" class="crime-text">
+<div class="crime-header">RAPE</div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][3]["score"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][3]["category"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][3]["percentile"] %></div>
+</div>
+<div id="robbery" class="crime-text">
+<div class="crime-header">ROBBERY</div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][4]["score"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][4]["category"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][4]["percentile"] %></div>
+</div>
+<div id="assault" class="crime-text">
+<div class="crime-header">ASSAULT</div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][5]["score"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][5]["category"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][5]["percentile"] %></div>
+</div>
+<div id="burglary" class="crime-text">
+<div class="crime-header">BURGLARY</div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][7]["score"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][7]["category"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][7]["percentile"] %></div>
+</div>
+<div id="motor-vehicle-theft" class="crime-text">
+<div class="crime-header">VEHICLE THEFT</div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][9]["score"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][9]["category"] %></div>
+<div><%= @population["themes"][0]["crimeIndexTheme"]["indexVariable"][9]["percentile"] %></div>
+</div>
+</div>
 
-
-
-<div class="school-banner">Schools</div>
+<hr>
+<div class="school-banner">SCHOOLS</div>
 
 <div class="school-display">
     <div class="school-box">
@@ -126,7 +204,7 @@ everything you need to know about…<div class="place-title"><%= @place_name%> <
 
 <hr>
 
-<div class="daycare-banner">Daycare</div>
+<div class="daycare-banner">DAYCARE</div>
 
 
 <div class="daycare-display">
@@ -156,7 +234,7 @@ everything you need to know about…<div class="place-title"><%= @place_name%> <
 
 <hr>
 
-<div class="coffee-banner">Coffee</div>
+<div class="coffee-banner">COFFEE</div>
 
 <div class="coffee-display">
     <div class="coffee-box-dark">
@@ -184,7 +262,7 @@ everything you need to know about…<div class="place-title"><%= @place_name%> <
 
 <hr>
 
-<div class="playgrounds-banner">Playgrounds</div>
+<div class="playgrounds-banner">PLAYGROUNDS</div>
 
 <div class="playgrounds-display">
     <div class="playgrounds-box-dark">
@@ -212,7 +290,7 @@ everything you need to know about…<div class="place-title"><%= @place_name%> <
 
 <hr>
 
-<div class="supermarket-banner">Supermarkets</div>
+<div class="supermarket-banner">SUPERMARKETS</div>
 
 <div class="supermarket-display">
     <div class="supermarket-box-dark">
@@ -239,6 +317,8 @@ everything you need to know about…<div class="place-title"><%= @place_name%> <
 <div class="foursquare">Information provided by <a href="https://www.foursquare.com/"><img src="/assets/foursquare.png" alt="Foursquare" class="foursquare-logo"></a></div>
 
 <hr>
+
+
 
 
 

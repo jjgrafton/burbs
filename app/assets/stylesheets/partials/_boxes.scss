@@ -1,468 +1,523 @@
 @import 'fonts';
 @import 'colors';
 @mixin login-signup {
-    border-radius: 25px;
-    width: 400px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    margin: 0px auto 0px auto;
-    padding: 10px 20px 10px 20px;
-    font-family: $header-font-stack;
-    background-color: $mid-green;
+  border-radius: 25px;
+  width: 400px;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  margin: 0px auto 0px auto;
+  padding: 10px 20px 10px 20px;
+  font-family: $header-font-stack;
+  background-color: $mid-green;
 }
 
 .login-box {
-    // @include login-signup;
-    height: 300px;
+  // @include login-signup;
+  height: 300px;
 }
 
 .signup-box {
-    @include login-signup;
-    height: 350px;
+  @include login-signup;
+  height: 350px;
 }
 
 .location-page {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .choose-location-box {
-    border-radius: 5px 20px 5px;
-    width: 400px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    margin: 0px auto 0px auto;
-    padding: 20px 20px 20px 20px;
-    font-family: $body-font-stack;
-    background-color: $mid-green;
-    height: 180px;
-    text-align: center;
+  border-radius: 5px 20px 5px;
+  width: 400px;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 0px auto 0px auto;
+  padding: 20px 20px 20px 20px;
+  font-family: $body-font-stack;
+  background-color: $mid-green;
+  height: 180px;
+  text-align: center;
 }
 
 .profile-box {
-    border-radius: 5px 20px 5px;
-    width: 400px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    color: $light-grey;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0px auto 0px auto;
-    padding: 20px 20px 20px 20px;
-    font-family: $header-font-stack;
-    background-color: $light-blue;
-    height: 180px;
-    text-align: center;
+  border-radius: 5px 20px 5px;
+  width: 400px;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  color: $light-grey;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px auto 0px auto;
+  padding: 20px 20px 20px 20px;
+  font-family: $header-font-stack;
+  background-color: $light-blue;
+  height: 180px;
+  text-align: center;
 }
 
 .location-box {
-    font-family: $body-font-stack;
-    color: $light-grey;
-    font-weight: bold;
-    font-size: 30px;
+  font-family: $body-font-stack;
+  color: $light-grey;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .travel-banner {
-    font-family: $header-font-stack;
-    font-size: 40px;
-    background-color: $light-blue;
-    color: $light-grey;
-    padding: 50px 5px 20px 5px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    margin: 0px 40px 20px 20px;
-    text-align: center;
-    width: 150px;
-    height: 220px;
-    border-radius: 5px 20px 5px;
+  font-family: $header-font-stack;
+  font-size: 50px; // background-color: $light-blue;
+  color: $light-grey;
+  padding: 50px 5px 20px 5px; // box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 0px 40px 20px 20px;
+  text-align: center;
+  width: 150px;
+  height: 220px; // border-radius: 5px 20px 5px;
 }
 
 .travel-display {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .driving-box {
-    font-family: $header-font-stack;
-    margin-right: 20px;
+  font-family: $header-font-stack;
+  margin-right: 20px;
 }
 
 .driving-stats {
-    background-color: $light-blue;
-    color: $light-grey;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-size: 30px;
-    border-radius: 25px;
-    padding: 5px;
-    text-align: center;
+  background-color: $light-blue;
+  color: $light-grey;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  border-radius: 25px;
+  padding: 5px;
+  text-align: center;
 }
 
 .train-box {
-    font-family: $header-font-stack;
-    margin-right: 20px;
+  font-family: $header-font-stack;
+  margin-right: 20px;
 }
 
 .train-stats {
-    background-color: $light-blue;
-    color: $light-grey;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-size: 40px;
-    border-radius: 50%;
-    padding: 10px;
-    width: 275px;
-    text-align: center;
-    margin: 0 auto 0 auto;
+  background-color: $light-blue;
+  color: $light-grey;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+  border-radius: 50%;
+  padding: 20px 10px 10px 10px;
+  width: 275px;
+  text-align: center;
+  margin: 0 auto 0 auto;
 }
 
 .travel-header {
-    font-family: $header-font-stack;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-size: 20px;
-    color: $light-grey;
-    padding: 10px 0 10px 0;
-    text-align: center;
+  font-family: $header-font-stack;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  color: $light-grey;
+  padding: 10px 0 10px 0;
+  text-align: center;
 }
 
 .travel-text {
-    font-family: $header-font-stack;
-    font-size: 15px;
-    color: $light-grey;
-    padding: 10px 0 10px 0;
-    text-align: center;
-    vertical-align: center;
+  font-family: $header-font-stack;
+  font-size: 15px;
+  color: $light-grey;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  vertical-align: center;
 }
 
 .map-row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .map-frame {
-    width: 600px;
-    height: 400px;
-    margin: 20px 10px 20px 10px;
+  width: 600px;
+  height: 400px;
+  margin: 20px 10px 20px 10px;
 }
 
 .school-banner {
-    font-family: $header-font-stack;
-    font-size: 40px;
-    background-color: $light-green;
-    color: $light-grey;
-    padding: 5px 5px 5px 5px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    margin: 60px auto 20px 10px;
-    text-align: center;
-    width: 200px;
-    border-radius: 5px 20px 5px;
+  font-family: $header-font-stack;
+  font-size: 50px; // background-color: $light-green;
+  color: $light-grey;
+  padding: 5px 5px 5px 5px; // box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 60px auto 20px 10px;
+  text-align: center;
+  width: 200px; // border-radius: 5px 20px 5px;
 }
 
 .school-display {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .school-box {
-    width: 280px;
-    height: 400px;
-    margin-bottom: 20px;
+  width: 280px;
+  height: 400px;
+  margin-bottom: 20px;
 }
 
 .school-info-box-dark {
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    font-family: $header-font-stack;
-    background-color: $dark-green;
-    width: 250px;
-    height: 230px;
-    border-radius: 25px;
-    margin-bottom: 15px;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  font-family: $header-font-stack;
+  background-color: $dark-green;
+  width: 250px;
+  height: 230px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .school-links-box-dark {
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    font-family: $header-font-stack;
-    background-color: $dark-green;
-    border-radius: 25px;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    width: 250px;
-    height: 180px;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  font-family: $header-font-stack;
+  background-color: $dark-green;
+  border-radius: 25px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  width: 250px;
+  height: 180px;
 }
 
 .school-info-box-light {
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    font-family: $header-font-stack;
-    background-color: $light-green;
-    width: 250px;
-    height: 230px;
-    border-radius: 25px;
-    margin-bottom: 15px;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  font-family: $header-font-stack;
+  background-color: $light-green;
+  width: 250px;
+  height: 230px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .school-links-box-light {
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    font-family: $header-font-stack;
-    background-color: $light-green;
-    border-radius: 25px;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    width: 250px;
-    height: 180px;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  font-family: $header-font-stack;
+  background-color: $light-green;
+  border-radius: 25px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  width: 250px;
+  height: 180px;
 }
 
 .school-header {
-    font-family: $header-font-stack;
-    font-size: 15px;
-    color: $light-grey;
-    padding: 10px 0 10px 0;
-    text-align: center;
+  font-family: $header-font-stack;
+  font-size: 15px;
+  color: $light-grey;
+  padding: 10px 0 10px 0;
+  text-align: center;
 }
 
 .school-text {
-    font-family: $body-font-stack;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    color: $light-grey;
-    font-size: 12px;
-    text-align: center;
+  font-family: $body-font-stack;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  color: $light-grey;
+  font-size: 12px;
+  text-align: center;
 }
 
 .school-link {
-    font-family: $body-font-stack;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    color: $light-grey !important;
-    font-size: 12px;
-    text-decoration: none;
-    text-align: center;
+  font-family: $body-font-stack;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  color: $light-grey !important;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .school-link:hover {
-    color: $mid-grey;
+  color: $mid-grey;
 }
 
 .school-link a {
-    color: $light-grey !important;
-    text-decoration: none;
+  color: $light-grey !important;
+  text-decoration: none;
 }
 
 .great-schools {
-    font-family: $header-font-stack;
-    font-size: 15px;
-    color: $mid-grey;
-    margin: 10px 0 0 20px;
+  font-family: $header-font-stack;
+  font-size: 15px;
+  color: $mid-grey;
+  margin: 20px 0 0 20px;
 }
 
 .great-schools a {
-    color: $dark-green;
-    text-decoration: none;
+  color: $dark-green;
+  text-decoration: none;
 }
 
 .daycare-banner {
-    font-family: $header-font-stack;
-    font-size: 40px;
-    background-color: $light-blue;
-    color: $light-grey;
-    padding: 5px 5px 5px 5px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    margin: 40px auto 20px 10px;
-    text-align: center;
-    width: 200px;
-    border-radius: 5px 20px 5px;
+  font-family: $header-font-stack;
+  font-size: 50px; // background-color: $light-blue;
+  color: $light-grey;
+  padding: 5px 5px 5px 5px; // box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 40px auto 20px 10px;
+  text-align: center;
+  width: 200px; // border-radius: 5px 20px 5px;
 }
 
 .daycare-display {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .daycare-box-dark {
-    border-radius: 25px;
-    width: 250px;
-    height: 150px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-family: $body-font-stack;
-    background-color: $mid-blue;
+  border-radius: 25px;
+  width: 250px;
+  height: 150px;
+  padding: 15px 5px 5px 0px;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: $body-font-stack;
+  background-color: $mid-blue;
 }
 
 .daycare-box-light {
-    border-radius: 25px;
-    width: 250px;
-    height: 150px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-family: $body-font-stack;
-    background-color: $light-blue;
+  border-radius: 25px;
+  width: 250px;
+  height: 150px;
+  padding: 15px 5px 5px 0px;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: $body-font-stack;
+  background-color: $light-blue;
 }
 
 .daycare-text {
-    font-family: $header-font-stack;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-size: 15px;
-    color: $light-grey;
-    padding: 10px 0 10px 0;
-    text-align: center;
-    vertical-align: center;
+  font-family: $header-font-stack;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  color: $light-grey;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  vertical-align: center;
 }
 
 .foursquare {
-    font-family: $header-font-stack;
-    font-size: 15px;
-    color: $mid-grey;
-    margin: 10px 0 0 20px;
+  font-family: $header-font-stack;
+  font-size: 15px;
+  color: $mid-grey;
+  margin: 10px 0 0 20px;
 }
 
 .coffee-banner {
-    font-family: $header-font-stack;
-    font-size: 40px;
-    background-color: $light-green;
-    color: $light-grey;
-    padding: 5px 5px 5px 5px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    margin: 40px auto 20px 10px;
-    text-align: center;
-    width: 200px;
-    border-radius: 5px 20px 5px;
+  font-family: $header-font-stack;
+  font-size: 50px; // background-color: $light-green;
+  color: $light-grey;
+  padding: 5px 5px 5px 5px; // box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 40px auto 20px 10px;
+  text-align: center;
+  width: 200px; // border-radius: 5px 20px 5px;
 }
 
 .coffee-display {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .coffee-box-dark {
-    border-radius: 25px;
-    width: 250px;
-    height: 150px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-family: $body-font-stack;
-    background-color: $mid-green;
+  border-radius: 25px;
+  width: 250px;
+  height: 150px;
+  padding: 15px 5px 5px 0px;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: $body-font-stack;
+  background-color: $dark-green;
 }
 
 .coffee-box-light {
-    border-radius: 25px;
-    width: 250px;
-    height: 150px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-family: $body-font-stack;
-    background-color: $light-green;
+  border-radius: 25px;
+  width: 250px;
+  height: 150px;
+  padding: 15px 5px 5px 0px;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: $body-font-stack;
+  background-color: $light-green;
 }
 
 .coffee-text {
-    font-family: $header-font-stack;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-size: 15px;
-    color: $light-grey;
-    padding: 10px 0 10px 0;
-    text-align: center;
-    vertical-align: center;
+  font-family: $header-font-stack;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  color: $light-grey;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  vertical-align: center;
 }
 
 .playgrounds-banner {
-    font-family: $header-font-stack;
-    font-size: 40px;
-    background-color: $light-blue;
-    color: $light-grey;
-    padding: 5px 5px 5px 5px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    margin: 40px auto 20px 10px;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    text-align: center;
-    width: 300px;
-    border-radius: 5px 20px 5px;
+  font-family: $header-font-stack;
+  font-size: 50px; // background-color: $light-blue;
+  color: $light-grey;
+  padding: 5px 5px 5px 5px; // box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+  margin: 40px auto 20px 10px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 300px; // border-radius: 5px 20px 5px;
 }
 
 .playgrounds-display {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .playgrounds-box-dark {
-    border-radius: 25px;
-    width: 250px;
-    height: 150px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-family: $body-font-stack;
-    background-color: $mid-blue;
+  border-radius: 25px;
+  width: 250px;
+  height: 150px;
+  padding: 15px 5px 5px 0px;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: $body-font-stack;
+  background-color: $mid-blue;
 }
 
 .playgrounds-box-light {
-    border-radius: 25px;
-    width: 250px;
-    height: 150px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-family: $body-font-stack;
-    background-color: $light-blue;
+  border-radius: 25px;
+  width: 250px;
+  height: 150px;
+  padding: 15px 5px 5px 0px;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: $body-font-stack;
+  background-color: $light-blue;
 }
 
 .playgrounds-text {
-    font-family: $header-font-stack;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-size: 15px;
-    color: $light-grey;
-    padding: 10px 0 10px 0;
-    text-align: center;
-    vertical-align: center;
+  font-family: $header-font-stack;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  color: $light-grey;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  vertical-align: center;
 }
 
 .supermarket-banner {
-    font-family: $header-font-stack;
-    font-size: 40px;
-    background-color: $light-green;
-    color: $light-grey;
-    padding: 5px 5px 5px 5px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    margin: 40px auto 20px 10px;
-    text-align: center;
-    width: 330px;
-    border-radius: 5px 20px 5px;
+  font-family: $header-font-stack;
+  font-size: 50px; // background-color: $light-green;
+  color: $light-grey;
+  padding: 5px 5px 5px 5px; // box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 40px auto 20px 10px;
+  text-align: center;
+  width: 330px; // border-radius: 5px 20px 5px;
 }
 
 .supermarket-display {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .supermarket-box-dark {
-    border-radius: 25px;
-    width: 250px;
-    height: 150px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-family: $body-font-stack;
-    background-color: $mid-green;
+  border-radius: 25px;
+  width: 250px;
+  height: 150px;
+  padding: 15px 5px 5px 0px;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: $body-font-stack;
+  background-color: $dark-green;
 }
 
 .supermarket-box-light {
-    border-radius: 25px;
-    width: 250px;
-    height: 150px;
-    box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-family: $body-font-stack;
-    background-color: $light-green;
+  border-radius: 25px;
+  width: 250px;
+  height: 150px;
+  padding: 15px 5px 5px 0px;
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: $body-font-stack;
+  background-color: $light-green;
 }
 
 .supermarket-text {
-    font-family: $header-font-stack;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-    font-size: 15px;
-    color: $light-grey;
-    padding: 10px 0 10px 0;
-    text-align: center;
-    vertical-align: center;
+  font-family: $header-font-stack;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  color: $light-grey;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  vertical-align: center;
+}
+
+.crime-banner {
+  font-family: $header-font-stack;
+  font-size: 50px; // background-color: $light-green;
+  color: $light-grey;
+  padding: 5px 5px 5px 5px; // box-shadow: 5px 5px 11px rgba(108, 108, 108, 1.00);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 40px auto 20px 0px;
+  text-align: center;
+  width: 330px; // border-radius: 5px 20px 5px;
+}
+
+.crime-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.crime-header {
+  font-family: $header-font-stack;
+  font-size: 15px;
+  color: $light-grey;
+}
+
+.crime-text {
+  font-family: $header-font-stack;
+  font-size: 12px;
+  color: $light-grey;
+  text-transform: uppercase;
+}
+
+.crime-categories {
+  font-family: $header-font-stack;
+  font-size: 12px;
+  color: $mid-green;
+  text-transform: uppercase;
+}
+
+.crime-type {
+  font-family: $header-font-stack;
+  font-size: 15px;
+  color: $mid-green;
+  font-weight: bold;
+}
+
+.demographics-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.demographics-box {
+  font-family: $header-font-stack;
+  font-size: 15px;
+  color: $light-grey;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 11px rgba(108, 108, 108, 1);
+  background-color: $mid-grey;
+  border-radius: 25px;
+  width: 400px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
 }
